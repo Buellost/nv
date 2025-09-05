@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple VN Engine - Démo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Interface du jeu -->
+        <div id="game-screen">
+            <div id="background"></div>
+            <div id="character-sprite"></div>
+            
+            <div id="text-box">
+                <div id="character-name"></div>
+                <div id="game-text"></div>
+                <div id="continue-indicator">▼</div>
+            </div>
+            
+            <div id="choices-container"></div>
+        </div>
+
+        <!-- Menu d'options -->
+        <div id="options-menu" class="hidden">
+            <div class="menu-content">
+                <h2>Options</h2>
+                
+                <div class="option-group">
+                    <label for="master-volume">Volume Principal</label>
+                    <input type="range" id="master-volume" min="0" max="100" value="70">
+                    <span id="master-volume-value">70%</span>
+                </div>
+
+                <div class="option-group">
+                    <label for="text-speed">Vitesse du texte</label>
+                    <input type="range" id="text-speed" min="1" max="10" value="5">
+                    <span id="text-speed-value">5</span>
+                </div>
+
+                <div class="option-group">
+                    <label for="auto-play-speed">Vitesse Auto-Play</label>
+                    <input type="range" id="auto-play-speed" min="1" max="10" value="3">
+                    <span id="auto-play-speed-value">3</span>
+                </div>
+
+                <div class="menu-buttons">
+                    <button id="save-game">💾 Sauvegarder</button>
+                    <button id="load-game">📁 Charger</button>
+                    <button id="close-menu">❌ Fermer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicateur Auto-play -->
+        <div id="auto-play-indicator" class="hidden">
+            <span>⏯️ AUTO</span>
+            <div id="auto-play-progress"></div>
+        </div>
+
+        <!-- Contrôles -->
+        <div id="game-controls">
+            <button id="menu-button">⚙️</button>
+            <button id="auto-play-toggle">⏯️</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="simple-vn-engine.js"></script>
+    <script src="story-example.js"></script>
+    <script>
+        // Initialisation du jeu avec l'histoire d'exemple
+        document.addEventListener('DOMContentLoaded', function() {
+            gameEngine.init();
+            gameEngine.start('start');
+        });
+    </script>
+</body>
+</html>

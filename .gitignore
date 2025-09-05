@@ -1,0 +1,46 @@
+# Fichiers et dossiers à exclure du repository public
+
+# Histoire personnelle - PRIVÉE
+story.js
+index.html
+
+# Dossier Monogatari (ancien projet)
+monogatari-vn/
+
+# Assets personnels
+audio/*.mp3
+audio/*.wav
+audio/*.ogg
+sprites/*.png
+sprites/*.jpg
+sprites/*.gif
+backgrounds/
+
+# Fichiers de développement
+.vscode/
+*.log
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules si vous utilisez npm
+node_modules/
+
+# Fichiers de build
+dist/
+build/
+
+# Fichiers temporaires
+*.bak
+*.swp
+*.swo
+
+# Fichiers de cache
+.cache/
+
+# Fichiers personnels à ne pas partager
+personal-notes.md
+private-ideas.txt

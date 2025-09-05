@@ -1,0 +1,49 @@
+{
+  "name": "club-etoiles-vn-engine",
+  "version": "1.0.0",
+  "description": "Un moteur de Visual Novel moderne et léger en JavaScript vanilla",
+  "main": "js/simple-vn-engine.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "serve-node": "npx http-server -p 8000",
+    "validate": "node scripts/validate-story.js",
+    "build": "node scripts/build.js"
+  },
+  "keywords": [
+    "visual-novel",
+    "game-engine",
+    "javascript",
+    "interactive-fiction",
+    "storytelling",
+    "web-game",
+    "html5",
+    "open-source"
+  ],
+  "author": "Votre Nom <votre.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/club-etoiles-vn-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/votre-username/club-etoiles-vn-engine/issues"
+  },
+  "homepage": "https://github.com/votre-username/club-etoiles-vn-engine#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "js/",
+    "css/",
+    "assets/",
+    "examples/",
+    "index.html",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}

@@ -44,3 +44,4 @@ build/
 # Fichiers personnels à ne pas partager
 personal-notes.md
 private-ideas.txt
+.gitignore-public
